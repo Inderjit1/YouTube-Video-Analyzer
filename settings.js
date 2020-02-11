@@ -4,7 +4,8 @@ module.exports = {
     development: {
         db:{
             dialect: 'mongodb',
-            url: 'mongodb://localhost:27017/YouTube',
+            dev_url: 'mongodb://localhost:27017/YouTube',
+            url: 'mongodb+srv://dbUser:hahaha123@cluster0-rc4di.mongodb.net/test?retryWrites=true&w=majority',
             storage: 'C:\\data\\db'
         }
     },

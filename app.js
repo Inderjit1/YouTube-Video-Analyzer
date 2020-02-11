@@ -24,7 +24,6 @@ const oidc = new ExpressOIDC({
   client_secret: process.env.OKTA_CLIENT_SECRET,
   redirect_uri: `${process.env.HOST_URL}/users/callback`,
   scope: "openid profile",
-
   routes: {
     login: {
       path: "/users/login"

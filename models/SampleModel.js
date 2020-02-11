@@ -3,6 +3,14 @@ var mongo = require('mongodb');
 var assert = require('assert');
 var settings = require('../settings');
 
+// const MongoClient = require('mongodb').MongoClient;
+// const uri = "mongodb+srv://dbUser:hahaha123@cluster0-rc4di.mongodb.net/test?retryWrites=true&w=majority";
+// const client = new MongoClient(uri, { useNewUrlParser: true });
+// client.connect(err => {
+//     const collection = client.db("test").collection("devices");
+//     // perform actions on the collection object
+//     client.close();
+// });
 
 mongoose.connect(settings.development.db.url, {useNewUrlParser: true, useUnifiedTopology: true});
 const db = mongoose.connection;
