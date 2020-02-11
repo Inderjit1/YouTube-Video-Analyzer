@@ -47,7 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: 'asdf;lkjh3lkjh235l23h5l235kjh',
   resave: true,
-  saveUninitialized: false
+  saveUninitialized: false,
 }));
 app.use(oidc.router);
 app.use((req, res, next) => {
